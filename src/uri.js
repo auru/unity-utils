@@ -1,16 +1,16 @@
 import { join as pathJoin } from 'path';
 
-export function normalize(...args) {
+export function join(...args) {
 
     args = args.filter( arg => arg === 0 || Boolean(arg) ).map(String);
     return args.length ? `${pathJoin(...args)}` : '/';
 }
 
-export function queryNormalize(query) {
-    for (let param in query) {
-        if (query.hasOwnProperty(param) && (query[param] === undefined || query[param] === '' || query[param] === null) ) {
-            delete query[param];
+export function query(queryObject) {
+    for (let param in queryObject) {
+        if (queryObject.hasOwnProperty(param) && (queryObject[param] === undefined || queryObject[param] === '' || queryObject[param] === null) ) {
+            delete queryObject[param];
         }
     }
-    return query;
+    return queryObject;
 }

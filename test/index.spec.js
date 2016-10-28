@@ -4,18 +4,32 @@ import utils from '../src';
 import * as uriFromFile from '../src/uri';
 
 test('uri imports are identical', t => {
+
+    // join
     t.is(
-        uriFromIndex.normalize,
-        uriFromFile.normalize,
+        uriFromIndex.join,
+        uriFromFile.join,
+    );
+    t.is(
+        utils.uri.join,
+        uriFromFile.join,
+    );
+    t.is(
+        utils.uri.join,
+        uriFromIndex.join,
     );
 
+    // query
     t.is(
-        utils.uri.normalize,
-        uriFromFile.normalize,
+        uriFromIndex.query,
+        uriFromFile.query,
     );
-
     t.is(
-        utils.uri.normalize,
-        uriFromIndex.normalize,
+        utils.uri.query,
+        uriFromFile.query,
+    );
+    t.is(
+        utils.uri.query,
+        uriFromIndex.query,
     )
 });
