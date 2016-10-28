@@ -2,7 +2,7 @@
   "name": "unity-utils",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "npm run test && npm run clean && ./node_modules/.bin/babel src --out-dir dist",
     "clean": "./node_modules/.bin/rimraf dist",
@@ -22,10 +22,20 @@
     "registry": "https://registry.npmjs.org/"
   },
   "license": "MIT",
+  "homepage": "https://github.com/auru/unity-utils#readme",
   "bugs": {
     "url": "https://github.com/auru/unity-utils/issues"
   },
-  "homepage": "https://github.com/auru/unity-utils#readme",
+  "keywords": [
+    "unity",
+    "util",
+    "utils",
+    "utility",
+    "utilities"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
   "dependencies": {
     "path": "^0.12.7"
   },
