@@ -1,4 +1,4 @@
-# Unity utils
+# Unity Utils
 
 [![Travis-CI](https://api.travis-ci.org/auru/unity-utils.svg?branch=master)](https://travis-ci.org/auru/unity-utils)
 [![npm version](https://badge.fury.io/js/unity-utils.svg)](https://badge.fury.io/js/unity-utils)
