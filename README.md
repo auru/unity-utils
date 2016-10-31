@@ -17,7 +17,7 @@
 # Installation
 
 ```bash
-npm i --save redux-unity-utils
+npm i --save unity-utils
 ```
 
 # API
