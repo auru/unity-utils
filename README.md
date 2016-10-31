@@ -53,5 +53,5 @@ Any query-like object.
 import { query } from 'unity-utils/uri';
 console.log(query({ param: 'val', 'null': null })); // outputs: "{"param": "val"}"
 ```
-## License
+# License
 MIT © AuRu
