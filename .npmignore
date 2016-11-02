@@ -43,3 +43,7 @@ jspm_packages
 .travis.yml
 .npmrc
 .idea
+.gitignore
+.babelrc
+src
+test
