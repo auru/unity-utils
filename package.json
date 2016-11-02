@@ -1,6 +1,6 @@
 {
   "name": "unity-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Some useful utility functions for the Unity team.",
   "main": "dist/index.js",
   "scripts": {
