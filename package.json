@@ -1,7 +1,7 @@
 {
   "name": "unity-utils",
   "version": "1.0.3",
-  "description": "Some useful utility functions for the Unity team.",
+  "description": "Useful utility functions for the Unity team.",
   "main": "dist/index.js",
   "scripts": {
     "build": "npm run test && npm run clean && ./node_modules/.bin/babel src --out-dir dist",
@@ -17,7 +17,10 @@
     "precommit": "npm test",
     "commitmsg": "./node_modules/.bin/validate-commit-msg",
     "test": "npm run lint-prod && ./node_modules/.bin/nyc ./node_modules/.bin/ava --verbose",
-    "test:watch": "npm run lint && ./node_modules/.bin/nyc ./node_modules/.bin/ava --verbose --watch"
+    "test:watch": "npm run lint && ./node_modules/.bin/nyc ./node_modules/.bin/ava --verbose --watch",
+    "release:patch": "npm run commit && npm version patch && git push upstream master --tags && npm publish",
+    "release:minor": "npm run commit && npm version minor && git push upstream master --tags && npm publish",
+    "release:major": "npm run commit && npm version major && git push upstream master --tags && npm publish"
   },
   "repository": {
     "type": "git",

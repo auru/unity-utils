@@ -8,7 +8,7 @@
 [![Deps-Dev](https://david-dm.org/auru/unity-utils/dev-status.svg)](https://david-dm.org/auru/unity-utils)
 [![Dependency Status](https://dependencyci.com/github/auru/unity-utils/badge)](https://dependencyci.com/github/auru/unity-utils)
 
-> Some useful utility functions for the Unity team.
+> Useful utility functions for the Unity team.
 
 # Table of Contents
   * [Installation](#installation)
